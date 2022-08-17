@@ -1,0 +1,147 @@
+/* @tailwind base;
+
+@tailwind components;
+
+@tailwind utilities; */
+
+html,
+
+
+body {
+    height: 100%;
+    margin: 0;
+}
+
+
+body {
+    background-color: #fff;
+    font-family: sans-serif;
+    /* overflow: hidden;	 */
+}
+
+
+h1 {
+    font-weight: normal;
+    font-size: 140%;
+    margin: 10px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 11px;
+    border-radius: 10px;
+
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #0C0C32;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #229ddb28;
+    border-radius: 10px;
+    /* background: rgba(0, 0, 0, 0.2); */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #4facdb;
+}
+
+#blocklyDiv {
+    /* float: bottom; */
+    height: 80%;
+    width: 100%;
+}
+
+
+/* .blocklyScrollbarHandle {
+    visibility: hidden;
+  } */
+
+
+/* ::-webkit-scrollbar {
+    width: 20px;
+} */
+
+
+.blocklyTreeLabel {
+    /* Makes our label white. */
+    color: white;
+    padding: 5px;
+}
+
+
+.blocklyToolboxContents {
+    /* Adds padding around the group of categories and separators. */
+    padding: .5em;
+}
+
+
+.blocklyTreeRow {
+    /* Adds space between the categories, rounds the corners and adds space around the label. */
+    height: initial;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: .5em;
+    border-radius: 4px;
+    background-color: black;
+
+}
+
+
+.blocklyTreeRowContentContainer {
+    /* Stacks the icon on top of the label. */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.customTreeRow {
+    /* Adds space between the categories, rounds the corners and adds space around the label. */
+    height: initial;
+    border-radius: 5px;
+
+}
+
+.python {
+    /* Adds space between the categories, rounds the corners and adds space around the label. */
+    margin-right: 5px;
+    color: #ffffff;
+}
+
+
+
+
+.customIcon {
+    /* Changes color of the icon to white. */
+    /* padding: 5px; */
+    /* padding-left: 0; */
+    font-style: bold;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.categoryIcon {
+    padding-right: 5px;
+    padding-left: 10px;
+    font-style: bold;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.customLabel {
+    font-weight: bold;
+    padding: 5px;
+}
+
+
+.CodeMirror {
+    /* font-family: Arial, monospace; */
+    font-size: 16px;
+}

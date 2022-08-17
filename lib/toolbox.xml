@@ -1,0 +1,2069 @@
+<xml xmlns="https://developers.google.com/blockly/xml" id="toolbox" style="display: none">
+    <category name="Python" css-icon="pythonIcon lab la-python" css-container="customTreeRow python" colour="#FDB827">
+      
+      <category name="Logic" css-icon="customIcon las la-arrows-alt" colour="#4C97FF">
+      <!-- <category name="Logic" css-icon="customIcon las la-arrows-alt" colour="{LOGIC_CATEGORY_COLOUR}"> -->
+        <block type="controls_if"></block>
+        
+        <block type="logic_compare">
+          <field name="OP">EQ</field>
+        </block>
+        <block type="logic_operation">
+          <field name="OP">AND</field>
+        </block>
+        <block type="logic_negate"></block>
+        <block type="logic_boolean">
+          <field name="BOOL">TRUE</field>
+        </block>
+        <block type="logic_null"></block>
+        <block type="logic_ternary"></block>
+      </category>
+      <category name="Loops" css-icon="customIcon las la-recycle" colour="#0fBD8C">
+      <!-- <category name="Loops" css-icon="customIcon las la-recycle" colour="{LOOP_CATEGORY_COLOUR}"> -->
+        <block type="controls_repeat_ext">
+          <value name="TIMES">
+            <shadow type="math_number">
+              <field name="NUM">10</field>
+            </shadow>
+          </value>
+        </block>
+        <block type="controls_whileUntil">
+          <field name="MODE">WHILE</field>
+        </block>
+        <block type="controls_for">
+          <field name="VAR" id="qoJ?{*TfEi0Ih%wOf|]n">i</field>
+          <value name="FROM">
+            <shadow type="math_number">
+              <field name="NUM">1</field>
+            </shadow>
+          </value>
+          <value name="TO">
+            <shadow type="math_number">
+              <field name="NUM">10</field>
+            </shadow>
+          </value>
+          <value name="BY">
+            <shadow type="math_number">
+              <field name="NUM">1</field>
+            </shadow>
+          </value>
+        </block>
+        <block type="controls_forEach">
+          <field name="VAR" id="t{1q;_Q,8k@xCqy~aed=">j</field>
+        </block>
+        <block type="controls_flow_statements">
+          <field name="FLOW">BREAK</field>
+        </block>
+      </category>
+      <category name="Math" css-icon="customIcon las la-superscript" colour="#59C059">
+      <!-- <category name="Math" css-icon="{MATH_CATEGORY_ICON}" colour="{MATH_CATEGORY_COLOUR}"> -->
+        <block type="math_number">
+          <field name="NUM">0</field>
+        </block>
+        <block type="math_arithmetic">
+          <field name="OP">ADD</field>
+          <value name="A">
+            <shadow type="math_number">
+              <field name="NUM">1</field>
+            </shadow>
+          </value>
+          <value name="B">
+            <shadow type="math_number">
+              <field name="NUM">1</field>
+            </shadow>
+          </value>
+        </block>
+        <block type="math_single">
+          <field name="OP">ROOT</field>
+          <value name="NUM">
+            <shadow type="math_number">
+              <field name="NUM">9</field>
+            </shadow>
+          </value>
+        </block>
+        <block type="math_trig">
+          <field name="OP">SIN</field>
+          <value name="NUM">
+            <shadow type="math_number">
+              <field name="NUM">45</field>
+            </shadow>
+          </value>
+        </block>
+        <block type="math_constant">
+          <field name="CONSTANT">PI</field>
+        </block>
+        <block type="math_number_property">
+          <mutation divisor_input="false"></mutation>
+          <field name="PROPERTY">EVEN</field>
+          <value name="NUMBER_TO_CHECK">
+            <shadow type="math_number">
+              <field name="NUM">0</field>
+            </shadow>
+          </value>
+        </block>
+        <block type="math_round">
+          <field name="OP">ROUND</field>
+          <value name="NUM">
+            <shadow type="math_number">
+              <field name="NUM">3.1</field>
+            </shadow>
+          </value>
+        </block>
+        <block type="math_on_list">
+          <mutation op="SUM"></mutation>
+          <field name="OP">SUM</field>
+        </block>
+        <block type="math_modulo">
+          <value name="DIVIDEND">
+            <shadow type="math_number">
+              <field name="NUM">64</field>
+            </shadow>
+          </value>
+          <value name="DIVISOR">
+            <shadow type="math_number">
+              <field name="NUM">10</field>
+            </shadow>
+          </value>
+        </block>
+        <block type="math_constrain">
+          <value name="VALUE">
+            <shadow type="math_number">
+              <field name="NUM">50</field>
+            </shadow>
+          </value>
+          <value name="LOW">
+            <shadow type="math_number">
+              <field name="NUM">1</field>
+            </shadow>
+          </value>
+          <value name="HIGH">
+            <shadow type="math_number">
+              <field name="NUM">100</field>
+            </shadow>
+          </value>
+        </block>
+        <block type="math_random_int">
+          <value name="FROM">
+            <shadow type="math_number">
+              <field name="NUM">1</field>
+            </shadow>
+          </value>
+          <value name="TO">
+            <shadow type="math_number">
+              <field name="NUM">100</field>
+            </shadow>
+          </value>
+        </block>
+        <block type="math_random_float"></block>
+      </category>
+      <category name="Text" css-icon="customIcon las la-spell-check" colour="#FFBF00">
+      <!-- <category name="Text" css-icon="{TEXT_CATEGORY_ICON}" colour="{TEXT_CATEGORY_COLOUR}"> -->
+        <block type="text">
+          <field name="TEXT"></field>
+        </block>
+        <block type="text_join">
+          <mutation items="2"></mutation>
+        </block>
+        <block type="text_append">
+          <field name="VAR" id="nxCmLAMDZttm*0VIwPod">item</field>
+          <value name="TEXT">
+            <shadow type="text">
+              <field name="TEXT"></field>
+            </shadow>
+          </value>
+        </block>
+        <block type="text_length">
+          <value name="VALUE">
+            <shadow type="text">
+              <field name="TEXT">abc</field>
+            </shadow>
+          </value>
+        </block>
+        <block type="text_isEmpty">
+          <value name="VALUE">
+            <shadow type="text">
+              <field name="TEXT"></field>
+            </shadow>
+          </value>
+        </block>
+        <block type="text_indexOf">
+          <field name="END">FIRST</field>
+          <value name="VALUE">
+            <block type="variables_get">
+              <field name="VAR" id="a7+}Z-ROm?HQmPLp7j">text</field>
+            </block>
+          </value>
+          <value name="FIND">
+            <shadow type="text">
+              <field name="TEXT">abc</field>
+            </shadow>
+          </value>
+        </block>
+        <block type="text_charAt">
+          <mutation at="true"></mutation>
+          <field name="WHERE">FROM_START</field>
+          <value name="VALUE">
+            <block type="variables_get">
+              <field name="VAR" id="a7+}Z-ROm?HQmPLp7j">text</field>
+            </block>
+          </value>
+        </block>
+        <block type="text_getSubstring">
+          <mutation at1="true" at2="true"></mutation>
+          <field name="WHERE1">FROM_START</field>
+          <field name="WHERE2">FROM_START</field>
+          <value name="STRING">
+            <block type="variables_get">
+              <field name="VAR" id="a7+}Z-ROm?HQmPLp7j">text</field>
+            </block>
+          </value>
+        </block>
+        <block type="text_changeCase">
+          <field name="CASE">UPPERCASE</field>
+          <value name="TEXT">
+            <shadow type="text">
+              <field name="TEXT">abc</field>
+            </shadow>
+          </value>
+        </block>
+        <block type="text_trim">
+          <field name="MODE">BOTH</field>
+          <value name="TEXT">
+            <shadow type="text">
+              <field name="TEXT">abc</field>
+            </shadow>
+          </value>
+        </block>
+        <block type="text_print">
+          <value name="TEXT">
+            <shadow type="text">
+              <field name="TEXT">abc</field>
+            </shadow>
+          </value>
+        </block>
+        <block type="text_prompt_ext">
+          <mutation type="TEXT"></mutation>
+          <field name="TYPE">TEXT</field>
+          <value name="TEXT">
+            <shadow type="text">
+              <field name="TEXT">abc</field>
+            </shadow>
+          </value>
+        </block>
+      </category>
+      <category name="Lists" css-icon="customIcon las la-list" colour="#9966FF">
+      <!-- <category name="Lists" css-icon="{LIST_CATEGORY_ICON}" colour="{LIST_CATEGORY_COLOUR}"> -->
+        <block type="lists_create_with">
+          <mutation items="0"></mutation>
+        </block>
+        <block type="lists_create_with">
+          <mutation items="3"></mutation>
+        </block>
+        <block type="lists_repeat">
+          <value name="NUM">
+            <shadow type="math_number">
+              <field name="NUM">5</field>
+            </shadow>
+          </value>
+        </block>
+        <block type="lists_length"></block>
+        <block type="lists_isEmpty"></block>
+        <block type="lists_indexOf">
+          <field name="END">FIRST</field>
+          <value name="VALUE">
+            <block type="variables_get">
+              <field name="VAR" id="^NJv4Do)0]:J7ks)PYxU">list</field>
+            </block>
+          </value>
+        </block>
+        <block type="lists_getIndex">
+          <mutation statement="false" at="true"></mutation>
+          <field name="MODE">GET</field>
+          <field name="WHERE">FROM_START</field>
+          <value name="VALUE">
+            <block type="variables_get">
+              <field name="VAR" id="^NJv4Do)0]:J7ks)PYxU">list</field>
+            </block>
+          </value>
+        </block>
+        <block type="lists_setIndex">
+          <mutation at="true"></mutation>
+          <field name="MODE">SET</field>
+          <field name="WHERE">FROM_START</field>
+          <value name="LIST">
+            <block type="variables_get">
+              <field name="VAR" id="^NJv4Do)0]:J7ks)PYxU">list</field>
+            </block>
+          </value>
+        </block>
+        <block type="lists_getSublist">
+          <mutation at1="true" at2="true"></mutation>
+          <field name="WHERE1">FROM_START</field>
+          <field name="WHERE2">FROM_START</field>
+          <value name="LIST">
+            <block type="variables_get">
+              <field name="VAR" id="^NJv4Do)0]:J7ks)PYxU">list</field>
+            </block>
+          </value>
+        </block>
+        <block type="lists_split">
+          <mutation mode="SPLIT"></mutation>
+          <field name="MODE">SPLIT</field>
+          <value name="DELIM">
+            <shadow type="text">
+              <field name="TEXT">,</field>
+            </shadow>
+          </value>
+        </block>
+        <block type="lists_sort">
+          <field name="TYPE">NUMERIC</field>
+          <field name="DIRECTION">1</field>
+        </block>
+      </category>
+      <sep></sep>
+      <category name="Variables" css-icon="customIcon las la-at" colour="#FF8C1A" custom="VARIABLE"></category>
+      <!-- <category name="Variables" css-icon="{VARIABLE_CATEGORY_ICON}" colour="{VARIABLE_CATEGORY_COLOUR}" custom="VARIABLE"></category> -->
+      <category name="Functions" css-icon="customIcon las la-stream" colour="#FF6680" custom="PROCEDURE"></category>
+      <!-- <category name="Functions" css-icon="{PROCEDURE_CATEGORY_ICON}" colour="{PROCEDURE_CATEGORY_COLOUR}" custom="PROCEDURE"></category> -->
+      </category>
+    
+    <category name="Automation" css-icon="pythonIcon lab la-python" colour="#0b7821">
+      <!-- <category name="Logic" css-icon="customIcon las la-arrows-alt" colour="{LOGIC_CATEGORY_COLOUR}"> -->
+        <category name="Mouse" css-icon="customIcon las la-mouse" colour="#42668B">
+            <block type="controls_if">
+            <mutation else="1"></mutation>
+            <value name="IF0">
+                <block type="logic_compare">
+                <field name="OP">EQ</field>
+                <value name="A">
+                    <block type="variables_get">
+                    <field name="VAR" id="A3JH(F4iaa#67-C,*iE">STATUS</field>
+                    </block>
+                </value>
+                <value name="B">
+                    <block type="logic_boolean">
+                    <field name="BOOL">TRUE</field>
+                    </block>
+                </value>
+                </block>
+            </value>
+            <statement name="DO0">
+                <block type="print_ap">
+                <field name="status" id="OLR3)D%V_kq3v#a16Vn">DATA</field>
+                </block>
+            </statement>
+            <statement name="ELSE">
+                <block type="print_ap">
+                <field name="status" id="A3JH(F4iaa#67-C,*iE">STATUS</field>
+                </block>
+            </statement>
+            </block>
+            <block type="print_ap">
+            <field name="status" id="A3JH(F4iaa#67-C,*iE">STATUS</field>
+            </block>
+            <block type="mouse_click">
+            <field name="left_or_right">left</field>
+            <field name="type_of_movement">abs</field>
+            <field name="status" id="A3JH(F4iaa#67-C,*iE">STATUS</field>
+            <value name="x">
+                <block type="math_number">
+                <field name="NUM">10</field>
+                </block>
+            </value>
+            <value name="y">
+                <block type="math_number">
+                <field name="NUM">20</field>
+                </block>
+            </value>
+            <value name="no_of_clicks">
+                <block type="math_number">
+                <field name="NUM">1</field>
+                </block>
+            </value>
+            </block>
+            <block type="mouse_move">
+            <field name="type_of_movement">abs</field>
+            <field name="status" id="A3JH(F4iaa#67-C,*iE">STATUS</field>
+            <value name="x">
+                <block type="math_number">
+                <field name="NUM">10</field>
+                </block>
+            </value>
+            <value name="y">
+                <block type="math_number">
+                <field name="NUM">20</field>
+                </block>
+            </value>
+            </block>
+            <block type="mouse_drag_from_to">
+            <field name="status" id="A3JH(F4iaa#67-C,*iE">STATUS</field>
+            <value name="x1">
+                <block type="math_number">
+                <field name="NUM">10</field>
+                </block>
+            </value>
+            <value name="y1">
+                <block type="math_number">
+                <field name="NUM">10</field>
+                </block>
+            </value>
+            <value name="x2">
+                <block type="math_number">
+                <field name="NUM">500</field>
+                </block>
+            </value>
+            <value name="y2">
+                <block type="math_number">
+                <field name="NUM">500</field>
+                </block>
+            </value>
+            </block>
+            <block type="mouse_search_snip_return_coordinates_x_y">
+            <field name="status" id="A3JH(F4iaa#67-C,*iE">STATUS</field>
+            <field name="data" id="OLR3)D%V_kq3v#a16Vn">DATA</field>
+            <value name="img">
+                <block type="text">
+                <field name="TEXT">Path</field>
+                </block>
+            </value>
+            <value name="wait">
+                <block type="math_number">
+                <field name="NUM">5</field>
+                </block>
+            </value>
+            </block>
+        </category>
+        <category name="Keyboard" colour="#5ba58c">
+            <block type="controls_if">
+            <mutation else="1"></mutation>
+            <value name="IF0">
+                <block type="logic_compare">
+                <field name="OP">EQ</field>
+                <value name="A">
+                    <block type="variables_get">
+                    <field name="VAR" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+                    </block>
+                </value>
+                <value name="B">
+                    <block type="logic_boolean">
+                    <field name="BOOL">TRUE</field>
+                    </block>
+                </value>
+                </block>
+            </value>
+            <statement name="DO0">
+                <block type="print_ap">
+                <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+                </block>
+            </statement>
+            <statement name="ELSE">
+                <block type="text_print">
+                <value name="TEXT">
+                    <block type="text">
+                    <field name="TEXT">Not Working</field>
+                    </block>
+                </value>
+                </block>
+            </statement>
+            </block>
+            <block type="print_ap">
+            <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            </block>
+            <block type="key_press">
+            <field name="key_1">a</field>
+            <field name="key_2">a</field>
+            <field name="key_3">a</field>
+            <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            <value name="write_to_window">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            </block>
+            <block type="key_write_enter">
+            <field name="key">e</field>
+            <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            <value name="text_to_write">
+                <block type="text">
+                <field name="TEXT">My AutoPylot is awesome</field>
+                </block>
+            </value>
+            <value name="write_to_window">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            </block>
+            <block type="key_hit_enter">
+            <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            <value name="write_to_window">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            </block>
+        </category>
+        <category name="Excel" colour="#5ba58c">
+            <block type="controls_if">
+            <mutation else="1"></mutation>
+            <value name="IF0">
+                <block type="logic_compare">
+                <field name="OP">EQ</field>
+                <value name="A">
+                    <block type="variables_get">
+                    <field name="VAR" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+                    </block>
+                </value>
+                <value name="B">
+                    <block type="logic_boolean">
+                    <field name="BOOL">TRUE</field>
+                    </block>
+                </value>
+                </block>
+            </value>
+            <statement name="DO0">
+                <block type="print_ap">
+                <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+                </block>
+            </statement>
+            <statement name="ELSE">
+                <block type="print_ap">
+                <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+                </block>
+            </statement>
+            </block>
+            <block type="print_ap">
+            <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            </block>
+            <block type="excel_get_single_cell">
+            <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            <field name="data" id="fzNXQc/~4k|pC6r:o?/5">DATA</field>
+            <value name="input_filepath">
+                <block type="text">
+                <field name="TEXT">Filepath</field>
+                </block>
+            </value>
+            <value name="input_sheetname">
+                <block type="text">
+                <field name="TEXT">Filepath</field>
+                </block>
+            </value>
+            <value name="header">
+                <block type="math_number">
+                <field name="NUM">0</field>
+                </block>
+            </value>
+            <value name="column_name">
+                <block type="text">
+                <field name="TEXT">Filepath</field>
+                </block>
+            </value>
+            <value name="cell_number">
+                <block type="math_number">
+                <field name="NUM">1</field>
+                </block>
+            </value>
+            </block>
+            <block type="excel_set_single_cell">
+            <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            <value name="input_filepath">
+                <block type="text">
+                <field name="TEXT">Filepath</field>
+                </block>
+            </value>
+            <value name="input_sheetname">
+                <block type="text">
+                <field name="TEXT">Filepath</field>
+                </block>
+            </value>
+            <value name="header">
+                <block type="math_number">
+                <field name="NUM">0</field>
+                </block>
+            </value>
+            <value name="column_name">
+                <block type="text">
+                <field name="TEXT">Filepath</field>
+                </block>
+            </value>
+            <value name="cell_number">
+                <block type="math_number">
+                <field name="NUM">1</field>
+                </block>
+            </value>
+            <value name="text">
+                <block type="text">
+                <field name="TEXT">Filepath</field>
+                </block>
+            </value>
+            </block>
+            <block type="excel_copy_range_from_sheet">
+            <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            <field name="data" id="H@JeN;pf,Rpec+P9xU4">COPIED_DATA</field>
+            <value name="input_filepath">
+                <block type="text">
+                <field name="TEXT">Filepath</field>
+                </block>
+            </value>
+            <value name="input_sheetname">
+                <block type="text">
+                <field name="TEXT">Sheet 1</field>
+                </block>
+            </value>
+            <value name="start_col">
+                <block type="math_number">
+                <field name="NUM">1</field>
+                </block>
+            </value>
+            <value name="start_row">
+                <block type="math_number">
+                <field name="NUM">1</field>
+                </block>
+            </value>
+            <value name="end_col">
+                <block type="math_number">
+                <field name="NUM">3</field>
+                </block>
+            </value>
+            <value name="end_row">
+                <block type="math_number">
+                <field name="NUM">3</field>
+                </block>
+            </value>
+            <next>
+                <block type="excel_paste_range_to_sheet">
+                <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+                <value name="input_filepath">
+                    <block type="text">
+                    <field name="TEXT">Filepath</field>
+                    </block>
+                </value>
+                <value name="input_sheetname">
+                    <block type="text">
+                    <field name="TEXT">Sheet 1</field>
+                    </block>
+                </value>
+                <value name="start_col">
+                    <block type="math_number">
+                    <field name="NUM">1</field>
+                    </block>
+                </value>
+                <value name="start_row">
+                    <block type="math_number">
+                    <field name="NUM">1</field>
+                    </block>
+                </value>
+                <value name="copied_data">
+                    <block type="variables_get">
+                    <field name="VAR" id="H@JeN;pf,Rpec+P9xU4">COPIED_DATA</field>
+                    </block>
+                </value>
+                </block>
+            </next>
+            </block>
+            <block type="excel_get_all_header_columns">
+            <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            <field name="data" id="fzNXQc/~4k|pC6r:o?/5">DATA</field>
+            <value name="input_filepath">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            <value name="input_sheetname">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            <value name="header">
+                <block type="math_number">
+                <field name="NUM">0</field>
+                </block>
+            </value>
+            </block>
+            <block type="excel_get_row_column_count">
+            <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            <field name="data" id="fzNXQc/~4k|pC6r:o?/5">DATA</field>
+            <value name="input_filepath">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            <value name="input_sheetname">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            <value name="header">
+                <block type="math_number">
+                <field name="NUM">0</field>
+                </block>
+            </value>
+            </block>
+            <block type="excel_get_all_sheet_names">
+            <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            <field name="data" id="fzNXQc/~4k|pC6r:o?/5">DATA</field>
+            <value name="input_filepath">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            </block>
+            <block type="excel_clear_sheet">
+            <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            <value name="input_filepath">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            <value name="input_sheetname">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            <value name="header">
+                <block type="math_number">
+                <field name="NUM">0</field>
+                </block>
+            </value>
+            </block>
+            <block type="excel_drop_columns">
+            <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            <value name="input_filepath">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            <value name="input_sheetname">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            <value name="header">
+                <block type="math_number">
+                <field name="NUM">0</field>
+                </block>
+            </value>
+            <value name="cols">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            </block>
+            <block type="excel_remove_duplicates">
+            <field name="same_file">TRUE</field>
+            <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            <value name="input_filepath">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            <value name="input_sheetname">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            <value name="header">
+                <block type="math_number">
+                <field name="NUM">0</field>
+                </block>
+            </value>
+            <value name="column_name">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            <value name="output_folder">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            <value name="output_filename">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            </block>
+            <block type="excel_group_by_column_values_n_split">
+            <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            <value name="input_filepath">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            <value name="input_sheetname">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            <value name="header">
+                <block type="math_number">
+                <field name="NUM">0</field>
+                </block>
+            </value>
+            <value name="column_name">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            <value name="output_folder">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            <value name="output_filename">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            </block>
+            <block type="excel_if_value_exists">
+            <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            <value name="input_filepath">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            <value name="input_sheetname">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            <value name="header">
+                <block type="math_number">
+                <field name="NUM">0</field>
+                </block>
+            </value>
+            <value name="cols">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            <value name="value">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            </block>
+            <block type="excel_apply_template_format">
+            <field name="same_file">TRUE</field>
+            <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            <value name="input_filepath">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            <value name="input_sheetname">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            <value name="input_template_filepath">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            <value name="input_template_sheetname">
+                <block type="math_number">
+                <field name="NUM">0</field>
+                </block>
+            </value>
+            <value name="output_folder">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            <value name="output_filename">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            </block>
+            <block type="excel_apply_format_as_table">
+            <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            <value name="input_filepath">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            <value name="input_sheetname">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            </block>
+            <block type="excel_merge_all_files">
+            <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            <value name="input_filepath">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            <value name="output_folder">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            <value name="output_filename">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            </block>
+            <block type="excel_create_file">
+            <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            <value name="output_sheetname">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            <value name="output_folder">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            <value name="output_filename">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            </block>
+        </category>
+        <category name="String" colour="#5ba58c">
+            <block type="controls_if">
+            <mutation else="1"></mutation>
+            <value name="IF0">
+                <block type="logic_compare">
+                <field name="OP">EQ</field>
+                <value name="A">
+                    <block type="variables_get">
+                    <field name="VAR" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+                    </block>
+                </value>
+                <value name="B">
+                    <block type="logic_boolean">
+                    <field name="BOOL">TRUE</field>
+                    </block>
+                </value>
+                </block>
+            </value>
+            <statement name="DO0">
+                <block type="print_ap">
+                <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+                </block>
+            </statement>
+            <statement name="ELSE">
+                <block type="print_ap">
+                <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+                </block>
+            </statement>
+            </block>
+            <block type="print_ap">
+            <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            </block>
+            <block type="string_extract_only_alphabets">
+            <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            <field name="data" id="H/Kebsqv]7?0xxje1=dQ">DATA</field>
+            <value name="inputString">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            </block>
+            <block type="string_extract_only_numbers">
+            <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            <field name="data" id="H/Kebsqv]7?0xxje1=dQ">DATA</field>
+            <value name="inputString">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            </block>
+            <block type="string_remove_special_characters">
+            <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            <field name="data" id="H/Kebsqv]7?0xxje1=dQ">DATA</field>
+            <value name="inputStr">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            </block>
+        </category>
+        <category name="Folder" colour="#5ba58c">
+            <block type="controls_if">
+            <mutation else="1"></mutation>
+            <value name="IF0">
+                <block type="logic_compare">
+                <field name="OP">EQ</field>
+                <value name="A">
+                    <block type="variables_get">
+                    <field name="VAR" id="m,f^=#eZ|R*fFAlBL_f">STATUS</field>
+                    </block>
+                </value>
+                <value name="B">
+                    <block type="logic_boolean">
+                    <field name="BOOL">TRUE</field>
+                    </block>
+                </value>
+                </block>
+            </value>
+            <statement name="DO0">
+                <block type="print_ap">
+                <field name="status" id="m,f^=#eZ|R*fFAlBL_f">STATUS</field>
+                </block>
+            </statement>
+            <statement name="ELSE">
+                <block type="print_ap">
+                <field name="status" id="m,f^=#eZ|R*fFAlBL_f">STATUS</field>
+                </block>
+            </statement>
+            </block>
+            <block type="print_ap">
+            <field name="status" id="m,f^=#eZ|R*fFAlBL_f">STATUS</field>
+            </block>
+            <block type="folder_write_text_file">
+            <field name="status" id="m,f^=#eZ|R*fFAlBL_f">STATUS</field>
+            <value name="txt_file_path">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            <value name="contents">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            </block>
+            <block type="folder_create">
+            <field name="status" id="m,f^=#eZ|R*fFAlBL_f">STATUS</field>
+            <value name="strFolderPath">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            </block>
+            <block type="folder_create_text_file">
+            <field name="status" id="m,f^=#eZ|R*fFAlBL_f">STATUS</field>
+            <value name="textFolderPath">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            <value name="txtFileName">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            </block>
+            <block type="folder_delete_all_files">
+            <field name="print_status">TRUE</field>
+            <field name="status" id="m,f^=#eZ|R*fFAlBL_f">STATUS</field>
+            <value name="fullPathOfTheFolder">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            <value name="file_extension_without_dot">
+                <block type="text">
+                <field name="TEXT">all</field>
+                </block>
+            </value>
+            </block>
+            <block type="file_rename">
+            <field name="print_status">TRUE</field>
+            <field name="status" id="m,f^=#eZ|R*fFAlBL_f">STATUS</field>
+            <value name="old_file_path">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            <value name="new_file_name">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            </block>
+            <block type="folder_get_all_filenames_as_list">
+            <field name="status" id="m,f^=#eZ|R*fFAlBL_f">STATUS</field>
+            <field name="data" id="!r=cbAny(v?V_m[/yjz4">DATA</field>
+            <value name="strFolderPath">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            <value name="extension">
+                <block type="text">
+                <field name="TEXT">all</field>
+                </block>
+            </value>
+            </block>
+            <block type="folder_read_text_file">
+            <field name="status" id="m,f^=#eZ|R*fFAlBL_f">STATUS</field>
+            <field name="data" id="!r=cbAny(v?V_m[/yjz4">DATA</field>
+            <value name="txt_file_path">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            </block>
+            <block type="file_get_json_details">
+            <field name="status" id="m,f^=#eZ|R*fFAlBL_f">STATUS</field>
+            <field name="data" id="!r=cbAny(v?V_m[/yjz4">DATA</field>
+            <value name="path_of_json_file">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            <value name="section">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            </block>
+        </category>
+        <category name="Windows" colour="#5ba58c">
+            <block type="controls_if">
+            <mutation else="1"></mutation>
+            <value name="IF0">
+                <block type="logic_compare">
+                <field name="OP">EQ</field>
+                <value name="A">
+                    <block type="variables_get">
+                    <field name="VAR" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+                    </block>
+                </value>
+                <value name="B">
+                    <block type="logic_boolean">
+                    <field name="BOOL">TRUE</field>
+                    </block>
+                </value>
+                </block>
+            </value>
+            <statement name="DO0">
+                <block type="print_ap">
+                <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+                </block>
+            </statement>
+            <statement name="ELSE">
+                <block type="print_ap">
+                <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+                </block>
+            </statement>
+            </block>
+            <block type="print_ap">
+            <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            </block>
+            <block type="windows_show_desktop">
+            <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            </block>
+            <block type="windows_launch_app">
+            <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            <value name="pathOfExeFile">
+                <block type="text">
+                <field name="TEXT">Notepad</field>
+                </block>
+            </value>
+            </block>
+            <block type="window_activate_window">
+            <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            <value name="window_title">
+                <block type="text">
+                <field name="TEXT">Notepad</field>
+                </block>
+            </value>
+            </block>
+            <block type="window_restore_windows">
+            <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            <value name="windowName">
+                <block type="text">
+                <field name="TEXT">Notepad</field>
+                </block>
+            </value>
+            </block>
+            <block type="window_activate_and_maximize_windows">
+            <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            <value name="windowName">
+                <block type="text">
+                <field name="TEXT">Notepad</field>
+                </block>
+            </value>
+            </block>
+            <block type="window_minimize_windows">
+            <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            <value name="windowName">
+                <block type="text">
+                <field name="TEXT">Notepad</field>
+                </block>
+            </value>
+            </block>
+            <block type="window_close_windows">
+            <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            <value name="windowName">
+                <block type="text">
+                <field name="TEXT">Notepad</field>
+                </block>
+            </value>
+            </block>
+            <block type="window_get_all_opened_titles_windows">
+            <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            <field name="data" id="YdnboV9d6Vt)7q.ejZ=]">DATA</field>
+            </block>
+            <block type="window_get_active_window">
+            <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            <field name="data" id="YdnboV9d6Vt)7q.ejZ=]">DATA</field>
+            </block>
+        </category>
+        <category name="Utility" colour="#5ba58c">
+            <block type="controls_if">
+            <mutation else="1"></mutation>
+            <value name="IF0">
+                <block type="logic_compare">
+                <field name="OP">EQ</field>
+                <value name="A">
+                    <block type="variables_get">
+                    <field name="VAR" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+                    </block>
+                </value>
+                <value name="B">
+                    <block type="logic_boolean">
+                    <field name="BOOL">TRUE</field>
+                    </block>
+                </value>
+                </block>
+            </value>
+            <statement name="DO0">
+                <block type="print_ap">
+                <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+                </block>
+            </statement>
+            <statement name="ELSE">
+                <block type="print_ap">
+                <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+                </block>
+            </statement>
+            </block>
+            <block type="print_ap">
+            <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            </block>
+            <block type="clipboard_get_data">
+            <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            <field name="data" id="Ky!2+OxBW3u1eN1+N]7m">DATA</field>
+            </block>
+            <block type="clipboard_set_data">
+            <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            <value name="data">
+                <block type="text">
+                <field name="TEXT"></field>
+                </block>
+            </value>
+            </block>
+            <block type="pause_program">
+                <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+                <value name="seconds">
+                <block type="math_number">
+                    <field name="NUM">5</field>
+                </block>
+                </value>
+            </block>
+            <block type="api_request">
+                <field name="method">get</field>
+                <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+                <field name="data" id="-#3/I+va-=*p3[jdPz0#">DATA</field>
+                <value name="url">
+                <block type="text">
+                    <field name="TEXT"></field>
+                </block>
+                </value>
+                <value name="headers">
+                <block type="text">
+                    <field name="TEXT">{"charset": "utf-8", "Content-Type": "application/json"}</field>
+                </block>
+                </value>
+                <value name="body">
+                <block type="text">
+                    <field name="TEXT">{}</field>
+                </block>
+                </value>
+            </block>
+        </category>
+    </category>
+    <category name="Artworks" colour="#5ba58c">
+      <block type="controls_if">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="logic_compare">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="variables_get">
+                <field name="VAR" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="logic_boolean">
+                <field name="BOOL">TRUE</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="print_ap">
+            <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="print_ap">
+            <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+          </block>
+        </statement>
+      </block>
+        <block type="print_ap">
+            <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+        </block>
+      <block type="art_simple_effects">
+        <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+        <value name="user_input_img_path">
+          <block type="text">
+            <field name="TEXT"></field>
+          </block>
+        </value>
+        <value name="name_required_on_image">
+          <block type="text">
+            <field name="TEXT"></field>
+          </block>
+        </value>
+        <value name="output_folder">
+          <block type="text">
+            <field name="TEXT"></field>
+          </block>
+        </value>
+      </block>
+      <block type="art_neural_effects">
+        <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+        <value name="input_image_folder_path">
+          <block type="text">
+            <field name="TEXT"></field>
+          </block>
+        </value>
+        <value name="style_image_folder_path">
+          <block type="text">
+            <field name="TEXT"></field>
+          </block>
+        </value>
+        <value name="output_image_folder_path">
+          <block type="text">
+            <field name="TEXT"></field>
+          </block>
+        </value>
+      </block>
+    </category>
+    <category name="AR &amp; VR" colour="#5ba58c">
+        <block type="controls_if">
+          <mutation else="1"></mutation>
+          <value name="IF0">
+            <block type="logic_compare">
+              <field name="OP">EQ</field>
+              <value name="A">
+                <block type="variables_get">
+                  <field name="VAR" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+                </block>
+              </value>
+              <value name="B">
+                <block type="logic_boolean">
+                  <field name="BOOL">TRUE</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO0">
+            <block type="print_ap">
+              <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            </block>
+          </statement>
+          <statement name="ELSE">
+            <block type="print_ap">
+              <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            </block>
+          </statement>
+        </block>
+        <block type="print_ap">
+          <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+        </block>
+        <block type="ar_facecam">
+          <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+          <value name="left_eye_image">
+            <block type="text">
+              <field name="TEXT"></field>
+            </block>
+          </value>
+          <value name="right_eye_image">
+            <block type="text">
+              <field name="TEXT"></field>
+            </block>
+          </value>
+          <value name="mouth_animation">
+            <block type="text">
+              <field name="TEXT"></field>
+            </block>
+          </value>
+        </block>
+        <block type="ar_trackhands">
+          <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+        </block>
+        <block type="ar_facemesh">
+          <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+        </block>
+    </category>
+    <category name="Data Science" colour="#5ba58c">
+        <block type="controls_if">
+          <mutation else="1"></mutation>
+          <value name="IF0">
+            <block type="logic_compare">
+              <field name="OP">EQ</field>
+              <value name="A">
+                <block type="variables_get">
+                  <field name="VAR" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+                </block>
+              </value>
+              <value name="B">
+                <block type="logic_boolean">
+                  <field name="BOOL">TRUE</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO0">
+            <block type="print_ap">
+              <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            </block>
+          </statement>
+          <statement name="ELSE">
+            <block type="print_ap">
+              <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            </block>
+          </statement>
+        </block>
+        <block type="print_ap">
+          <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+        </block>
+        <block type="ds_html_table_from_website">
+          <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+          <value name="website_url">
+            <block type="text">
+              <field name="TEXT"></field>
+            </block>
+          </value>
+          <value name="output_folder">
+            <block type="text">
+              <field name="TEXT"></field>
+            </block>
+          </value>
+        </block>
+        <block type="ds_describe_excel_data">
+          <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+          <field name="data" id="dp[(M(Q!DY(N!,gRhscs">DATA</field>
+          <value name="input_filepath">
+            <block type="text">
+              <field name="TEXT"></field>
+            </block>
+          </value>
+          <value name="input_sheetname">
+            <block type="text">
+              <field name="TEXT"></field>
+            </block>
+          </value>
+          <value name="header">
+            <block type="math_number">
+              <field name="NUM">0</field>
+            </block>
+          </value>
+        </block>
+        <block type="ds_pivot_excel_table">
+          <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+          <value name="input_filepath">
+            <block type="text">
+              <field name="TEXT"></field>
+            </block>
+          </value>
+          <value name="input_sheetname">
+            <block type="text">
+              <field name="TEXT"></field>
+            </block>
+          </value>
+          <value name="header">
+            <block type="math_number">
+              <field name="NUM">0</field>
+            </block>
+          </value>
+          <value name="rows">
+            <block type="lists_create_with">
+              <mutation items="1"></mutation>
+              <value name="ADD0">
+                <block type="text">
+                  <field name="TEXT"></field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <value name="cols">
+            <block type="lists_create_with">
+              <mutation items="1"></mutation>
+              <value name="ADD0">
+                <block type="text">
+                  <field name="TEXT"></field>
+                </block>
+              </value>
+            </block>
+          </value>
+        </block>
+        <block type="ds_draw_charts_from_excel">
+          <field name="chart_type">bar</field>
+          <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+          <value name="input_filepath">
+            <block type="text">
+              <field name="TEXT"></field>
+            </block>
+          </value>
+          <value name="input_sheetname">
+            <block type="text">
+              <field name="TEXT"></field>
+            </block>
+          </value>
+          <value name="header">
+            <block type="math_number">
+              <field name="NUM">0</field>
+            </block>
+          </value>
+          <value name="x_col">
+            <block type="text">
+              <field name="TEXT"></field>
+            </block>
+          </value>
+          <value name="y_col">
+            <block type="text">
+              <field name="TEXT"></field>
+            </block>
+          </value>
+          <value name="title">
+            <block type="text">
+              <field name="TEXT"></field>
+            </block>
+          </value>
+        </block>
+    </category>
+    <category name="Comp Vision" colour="#5ba58c">
+        <block type="controls_if">
+          <mutation else="1"></mutation>
+          <value name="IF0">
+            <block type="logic_compare">
+              <field name="OP">EQ</field>
+              <value name="A">
+                <block type="variables_get">
+                  <field name="VAR" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+                </block>
+              </value>
+              <value name="B">
+                <block type="logic_boolean">
+                  <field name="BOOL">TRUE</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO0">
+            <block type="print_ap">
+              <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            </block>
+          </statement>
+          <statement name="ELSE">
+            <block type="print_ap">
+              <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            </block>
+          </statement>
+        </block>
+        <block type="print_ap">
+          <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+        </block>
+        <block type="image_to_text">
+            <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            <field name="data" id="-#3/I+va-=*p3[jdPz0#">DATA</field>
+            <value name="img_path">
+              <block type="text">
+                <field name="TEXT"></field>
+              </block>
+            </value>
+          </block>
+    </category>
+    <category name="Converters" colour="#5ba58c">
+        <block type="controls_if">
+          <mutation else="1"></mutation>
+          <value name="IF0">
+            <block type="logic_compare">
+              <field name="OP">EQ</field>
+              <value name="A">
+                <block type="variables_get">
+                  <field name="VAR" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+                </block>
+              </value>
+              <value name="B">
+                <block type="logic_boolean">
+                  <field name="BOOL">TRUE</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO0">
+            <block type="print_ap">
+              <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            </block>
+          </statement>
+          <statement name="ELSE">
+            <block type="print_ap">
+              <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            </block>
+          </statement>
+        </block>
+        <block type="print_ap">
+          <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+        </block>
+        <block type="convert_jpg_to_png">
+          <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+          <value name="input_filepath">
+            <block type="text">
+              <field name="TEXT"></field>
+            </block>
+          </value>
+          <value name="output_folder">
+            <block type="text">
+              <field name="TEXT"></field>
+            </block>
+          </value>
+          <value name="output_filename">
+            <block type="text">
+              <field name="TEXT"></field>
+            </block>
+          </value>
+        </block>
+        <block type="convert_png_to_jpg">
+          <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+          <value name="input_filepath">
+            <block type="text">
+              <field name="TEXT"></field>
+            </block>
+          </value>
+          <value name="output_folder">
+            <block type="text">
+              <field name="TEXT"></field>
+            </block>
+          </value>
+          <value name="output_filename">
+            <block type="text">
+              <field name="TEXT"></field>
+            </block>
+          </value>
+        </block>
+        <block type="convert_xls_to_xlsx">
+          <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+          <value name="input_file">
+            <block type="text">
+              <field name="TEXT"></field>
+            </block>
+          </value>
+          <value name="output_folder">
+            <block type="text">
+              <field name="TEXT"></field>
+            </block>
+          </value>
+          <value name="output_filename">
+            <block type="text">
+              <field name="TEXT"></field>
+            </block>
+          </value>
+        </block>
+        <block type="convert_change_corrupt_xls_to_xlsx">
+          <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+          <value name="input_file">
+            <block type="text">
+              <field name="TEXT"></field>
+            </block>
+          </value>
+          <value name="input_sheetname">
+            <block type="text">
+              <field name="TEXT"></field>
+            </block>
+          </value>
+          <value name="output_folder">
+            <block type="text">
+              <field name="TEXT"></field>
+            </block>
+          </value>
+          <value name="output_filename">
+            <block type="text">
+              <field name="TEXT"></field>
+            </block>
+          </value>
+        </block>
+        <block type="convert_image_to_base64">
+          <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+          <field name="data" id="Dmyblwp+p99E[j[4[o1F">DATA</field>
+          <value name="input_file">
+            <block type="text">
+              <field name="TEXT"></field>
+            </block>
+          </value>
+        </block>
+        <block type="convert_base64_to_img">
+          <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+          <value name="imgBase64Str">
+            <block type="text">
+              <field name="TEXT"></field>
+            </block>
+          </value>
+          <value name="img_folder_path">
+            <block type="text">
+              <field name="TEXT"></field>
+            </block>
+          </value>
+          <value name="img_file_name">
+            <block type="text">
+              <field name="TEXT"></field>
+            </block>
+          </value>
+        </block>
+        <block type="convert_csv_to_excel">
+          <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+          <value name="csv_path">
+            <block type="text">
+              <field name="TEXT"></field>
+            </block>
+          </value>
+          <value name="sep">
+            <block type="text">
+              <field name="TEXT"></field>
+            </block>
+          </value>
+          <value name="excel_output_folder_path">
+            <block type="text">
+              <field name="TEXT"></field>
+            </block>
+          </value>
+          <value name="excel_file_name">
+            <block type="text">
+              <field name="TEXT"></field>
+            </block>
+          </value>
+        </block>
+        <block type="convert_excel_to_colored_html">
+          <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+          <value name="input_filepath">
+            <block type="text">
+              <field name="TEXT"></field>
+            </block>
+          </value>
+          <value name="output_folder">
+            <block type="text">
+              <field name="TEXT"></field>
+            </block>
+          </value>
+          <value name="output_filename">
+            <block type="text">
+              <field name="TEXT"></field>
+            </block>
+          </value>
+        </block>
+    </category>
+    <category name="E-Mail" colour="#5ba58c">
+        <block type="controls_if">
+          <mutation else="1"></mutation>
+          <value name="IF0">
+            <block type="logic_compare">
+              <field name="OP">EQ</field>
+              <value name="A">
+                <block type="variables_get">
+                  <field name="VAR" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+                </block>
+              </value>
+              <value name="B">
+                <block type="logic_boolean">
+                  <field name="BOOL">TRUE</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO0">
+            <block type="print_ap">
+              <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            </block>
+          </statement>
+          <statement name="ELSE">
+            <block type="print_ap">
+              <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            </block>
+          </statement>
+        </block>
+        <block type="print_ap">
+          <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+        </block>
+        <block type="mail_send_via_desktop_outlook">
+          <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+          <value name="to_email_id">
+            <block type="text">
+              <field name="TEXT"></field>
+            </block>
+          </value>
+          <value name="subject">
+            <block type="text">
+              <field name="TEXT"></field>
+            </block>
+          </value>
+          <value name="message">
+            <block type="text">
+              <field name="TEXT"></field>
+            </block>
+          </value>
+          <value name="attachment_path">
+            <block type="text">
+              <field name="TEXT"></field>
+            </block>
+          </value>
+        </block>
+        <block type="mail_send_gmail_with_app_password">
+          <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+          <value name="gmail_username">
+            <block type="text">
+              <field name="TEXT"></field>
+            </block>
+          </value>
+          <value name="gmail_app_password">
+            <block type="text">
+              <field name="TEXT"></field>
+            </block>
+          </value>
+          <value name="to_email_id">
+            <block type="text">
+              <field name="TEXT"></field>
+            </block>
+          </value>
+          <value name="subject">
+            <block type="text">
+              <field name="TEXT"></field>
+            </block>
+          </value>
+          <value name="message">
+            <block type="text">
+              <field name="TEXT"></field>
+            </block>
+          </value>
+          <value name="attachment_path">
+            <block type="text">
+              <field name="TEXT"></field>
+            </block>
+          </value>
+        </block>
+    </category>
+    <category name="Voice" colour="#5ba58c">
+        <block type="controls_if">
+            <mutation else="1"></mutation>
+            <value name="IF0">
+            <block type="logic_compare">
+                <field name="OP">EQ</field>
+                <value name="A">
+                <block type="variables_get">
+                    <field name="VAR" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+                </block>
+                </value>
+                <value name="B">
+                <block type="logic_boolean">
+                    <field name="BOOL">TRUE</field>
+                </block>
+                </value>
+            </block>
+            </value>
+            <statement name="DO0">
+            <block type="print_ap">
+                <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            </block>
+            </statement>
+            <statement name="ELSE">
+            <block type="print_ap">
+                <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            </block>
+            </statement>
+        </block>
+        <block type="print_ap">
+            <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+        </block>
+        <block type="text_to_speech">
+            <field name="show">FALSE</field>
+            <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            <value name="audio">
+                <block type="text">
+                    <field name="TEXT"></field>
+                </block>
+            </value>
+        </block>
+        <block type="speech_to_text">
+            <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            <field name="data" id="-#3/I+va-=*p3[jdPz0#">DATA</field>
+        </block>
+    </category>
+    <category name="Alerts" colour="#5ba58c">
+        <block type="controls_if">
+          <mutation else="1"></mutation>
+          <value name="IF0">
+            <block type="logic_compare">
+              <field name="OP">EQ</field>
+              <value name="A">
+                <block type="variables_get">
+                  <field name="VAR" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+                </block>
+              </value>
+              <value name="B">
+                <block type="logic_boolean">
+                  <field name="BOOL">TRUE</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO0">
+            <block type="print_ap">
+              <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            </block>
+          </statement>
+          <statement name="ELSE">
+            <block type="print_ap">
+              <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            </block>
+          </statement>
+        </block>
+        <block type="print_ap">
+          <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+        </block>
+        <block type="msg_box_info">
+          <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+          <value name="msg_for_user">
+            <block type="text">
+              <field name="TEXT">My AutoPylot</field>
+            </block>
+          </value>
+        </block>
+        <block type="msg_box_ask_yes_no">
+          <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+          <value name="msg_for_user">
+            <block type="text">
+              <field name="TEXT">Is My AutoPylot Awesome ?</field>
+            </block>
+          </value>
+        </block>
+        <block type="msg_count_down">
+          <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+          <value name="msg_for_user">
+            <block type="text">
+              <field name="TEXT">Starting in</field>
+            </block>
+          </value>
+          <value name="default_time">
+            <block type="math_number">
+              <field name="NUM">5</field>
+            </block>
+          </value>
+        </block>
+    </category>
+    <category name="PDF" colour="#5ba58c">
+        <block type="controls_if">
+          <mutation else="1"></mutation>
+          <value name="IF0">
+            <block type="logic_compare">
+              <field name="OP">EQ</field>
+              <value name="A">
+                <block type="variables_get">
+                  <field name="VAR" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+                </block>
+              </value>
+              <value name="B">
+                <block type="logic_boolean">
+                  <field name="BOOL">TRUE</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO0">
+            <block type="print_ap">
+              <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            </block>
+          </statement>
+          <statement name="ELSE">
+            <block type="print_ap">
+              <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            </block>
+          </statement>
+        </block>
+        <block type="print_ap">
+          <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+        </block>
+        <block type="pdf_extract_all_tables">
+          <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+          <value name="pdf_file_path">
+            <block type="text">
+              <field name="TEXT"></field>
+            </block>
+          </value>
+          <value name="output_folder">
+            <block type="text">
+              <field name="TEXT"></field>
+            </block>
+          </value>
+          <value name="output_file_name">
+            <block type="text">
+              <field name="TEXT"></field>
+            </block>
+          </value>
+        </block>
+    </category>
+    <category name="Citrix" colour="#5ba58c">
+        <block type="controls_if">
+          <mutation else="1"></mutation>
+          <value name="IF0">
+            <block type="logic_compare">
+              <field name="OP">EQ</field>
+              <value name="A">
+                <block type="variables_get">
+                  <field name="VAR" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+                </block>
+              </value>
+              <value name="B">
+                <block type="logic_boolean">
+                  <field name="BOOL">TRUE</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO0">
+            <block type="print_ap">
+              <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            </block>
+          </statement>
+          <statement name="ELSE">
+            <block type="print_ap">
+              <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+            </block>
+          </statement>
+        </block>
+        <block type="print_ap">
+          <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+        </block>
+        <block type="citrix_scrape_contents_by_search_copy_paste">
+          <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+          <value name="highlight_text">
+            <block type="text">
+              <field name="TEXT"></field>
+            </block>
+          </value>
+        </block>
+        <block type="citrix_window_clear_search">
+          <field name="status" id=":ulA-E6LLi-c7ikn!(%">STATUS</field>
+        </block>
+    </category>
+    <category name="Utilities" colour="#5ba58c">
+      <block type="get_path"></block>
+      <block type="folder_path"></block>
+    </category>
+    <category name="Variables" colour="#a55b80" custom="VARIABLE"></category>
+ </xml>
