@@ -128,11 +128,11 @@ intro.setOption("dontShowAgain", true).oncomplete(function() {
   exitOnEsc : false,
   steps: [
     {
-    intro: "Welcome to My-AutoPylot Tool Demo",
+    intro: "Welcome to My-AutoPylot Tool Demo.",
    },
   {
     element: document.getElementById('blocklyDiv'),
-    intro: "This is the workspace where you can create your program",
+    intro: "This is the workspace to create your bot.",
   },
   {
     element: document.querySelector('body > div.code-container'),
@@ -140,12 +140,12 @@ intro.setOption("dontShowAgain", true).oncomplete(function() {
   },
   {
     element: document.querySelector('#blocklyDiv > div > div.blocklyToolboxDiv.blocklyNonSelectable'),
-    intro: "This is the toolbox where you can find all the components you can use in your program",
+    intro: "This is the toolbox, where you can locate all the components for your bot.",
     position: 'right'
   },
   {
     element: document.getElementById('blockly-d'),
-    intro: "In Mouse Category and you will see all the mouse related blocks. Get started now.",
+    intro: "All mouse-related blocks can be found in the Mouse Category. Get started now.",
     position: 'right'
   },
   ]
